@@ -92,15 +92,19 @@ if (item.getPrice() > 300 && item.getDiscount() > 0 && item.getBarcode().charAt(
 Објаснување: 
 
 1. True, True, True
+   
 input: item = new Item("Product", "012345", 400, 0.1f), payment = 360
 output: Сумата се намалува за 30
 
 2. False, True, Irrelevant
+   
 input: item = new Item("Product", "123456", 200, 0.1f), payment = 200
 
 3. True, False, Irrelevant
+   
 input: item = new Item("Product", "012345", 400, 0.0f), payment = 400
 
 4. True, True, False
+ 
 input: item = new Item("Product", "123456", 400, 0.1f), payment = 360
 
