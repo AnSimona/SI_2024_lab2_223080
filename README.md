@@ -87,6 +87,7 @@ if (item.getPrice() > 300 && item.getDiscount() > 0 && item.getBarcode().charAt(
 1. item.getPrice() > 300
 2. item.getDiscount() > 0
 3. item.getBarcode().charAt(0) == '0'
+   
 Секоја од овие три подуслови може да биде true или false, што дава вкупно 2^3 = 8 можни комбинации на вистинитост.
 
 Објаснување: 
