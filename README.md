@@ -17,7 +17,7 @@ V(G)=37-29=8+2=10 Каде што 29 е бројот на јазли, 37 бро�
 
 9+1 = 10
 
-# Гранки и тест случаи според Every Branch:
+# Тест случаи според Every Branch:
 
 1. if (allItems == null)
    
@@ -80,7 +80,7 @@ input: allItems = [new Item("Milk", "01234", 100, 0), new Item("Bread", "56789",
 output: false
 
 
-# Multiple condition
+#  Тест случаи според Multiple condition
 if (item.getPrice() > 300 && item.getDiscount() > 0 && item.getBarcode().charAt(0)== '0')
 
 Постојат три подуслови во кои условот е задоволен:
