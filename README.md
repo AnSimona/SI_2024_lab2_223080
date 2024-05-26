@@ -99,7 +99,7 @@ input: item = new Item("Product", "012345", 400, 0.1f), payment = 360
 output: Сумата се намалува за 30
 
 
-3. True, True, False
+2. True, True, False
    
 input: item = new Item("Product", "112345", 400, 0.1f), payment = 360
 
@@ -108,7 +108,7 @@ output: Сумата не се намалува за 30
 Цена > 300 и попуст > 0, но баркодот не започнува со '0'.
 
 
-4. True, False, True
+3. True, False, True
    
 input: item = new Item("Product", "012345", 400, 0.0f), payment = 400
 
@@ -117,7 +117,7 @@ output: Сумата не се намалува за 30
 Цена > 300 и баркодот започнува со '0', но нема попуст
 
 
-5. True, False, False
+4. True, False, False
 
 input: item = new Item("Product", "112345", 400, 0.0f), payment = 400
 
@@ -126,7 +126,7 @@ output: Сумата не се намалува за 30
 Цена > 300, но нема попуст и баркодот не започнува со '0'
 
 
-6. False, True, True
+5. False, True, True
    
 input: item = new Item("Product", "012345", 300, 0.1f), payment = 270
 
@@ -136,7 +136,7 @@ output: Сумата не се намалува за 30
 
 
 
-7. False, True, False
+6. False, True, False
    
 input: item = new Item("Product", "112345", 300, 0.1f), payment = 270
 
@@ -145,7 +145,7 @@ output: Сумата не се намалува за 30
 Цена <= 300 иако има попуст, но баркодот не започнува со '0'
 
 
-8. False, False, True
+7. False, False, True
 
 input: item = new Item("Product", "012345", 300, 0.0f), payment = 300
 
@@ -154,7 +154,7 @@ output: Сумата не се намалува за 30
 Цена <= 300, нема попуст, иако баркодот започнува со '0'
 
 
-9. False, False, False
+8. False, False, False
    
 input: item = new Item("Product", "112345", 300, 0.0f), payment = 300
 
