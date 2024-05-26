@@ -84,9 +84,23 @@ output: false
 if (item.getPrice() > 300 && item.getDiscount() > 0 && item.getBarcode().charAt(0)== '0')
 
 Дадениот код минимум може да помине 4 тестови за да биде исполнет. 
-1. Случај е кога сите критериуми се исполнети - ТТТ
+1. Случај е кога сите критериуми се исполнети 
 2. Доколку цената е помала од 300 и условот item.getDiscount() е исполнет
 3. Кога првиот случај е исполнет, а вториот не
 4. Случај кога цената е поголема, има попуст но баркодот не започнува со '0'
-   
+
+Објаснување: 
+
+1. True, True, True
+input: item = new Item("Product", "012345", 400, 0.1f), payment = 360
+output: Сумата се намалува за 30
+
+2. False, True, Irrelevant
+input: item = new Item("Product", "123456", 200, 0.1f), payment = 200
+
+3. True, False, Irrelevant
+input: item = new Item("Product", "012345", 400, 0.0f), payment = 400
+
+4. True, True, False
+input: item = new Item("Product", "123456", 400, 0.1f), payment = 360
 
